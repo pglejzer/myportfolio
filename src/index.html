@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Piotr Glejzer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.viewportchecker.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <nav id="nav" class="nav">
+            <ul class="nav__ul" id="menu">
+                <li class="nav__li">
+                    <a href="#home" class="nav__link">
+                        <i class="fas fa-home"></i>Strona główna</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#about" class="nav__link">
+                        <i class="fas far fa-smile"></i>O mnie</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="fas fa-code"></i>Projekty</a>
+                </li>
+                <li class="nav__li">
+                    <a href="#contact" class="nav__link">
+                        <i class="fas fa-at"></i>Kontakt</a>
+                </li>
+            </ul>
+            <button class="nav__button" id="menu-button">
+                <img alt="show menu" src="img/menu.png" class="nav__logo--hamburger">
+            </button>
+        </nav>
+    </header>
+    <section id="home" class="home" data-animate="fadeIn">
+        <div class="home__container">
+            <h1 class="home__h1">Witam na mojej stronie!</h1>
+            <div class="home__buttons">
+                <a href="#about" class="home__a">
+                    <button class="home__button" type="button">Zapraszam</button>
+                </a>
+                <a href="https://pglejzer.github.io/cv/src/" class="home__a">
+                    <button class="home__button" type="button">Moje CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about__container">
+            <div class="about__text" data-animate="fadeIn">
+                <h3 class="about__h3">Kim jestem?</h3>
+                <p class="about__p">
+                    Nazywam sie Piotr Glejzer. Jestem front-end developerem. Posiadam wyższe wykształcenie techinczne, a dokładniej jestem inżynierem
+                    budownictwa. Studiowałem na Wyższej Szkole Ekologii i Zarządzania w Warszawie.
+                    <br> Swoja przygodę z tą interesującą dziedzina jakim jest programowanie rozpocząłem juz dość wczesnie, bodajże
+                    w gimnazjum, gdzie stawiałem swoje pierwsze kroki w
+                    <a href="">C++</a> oraz
+                    <a href="">Delphi</a>. Jednak ta przygoda nie trwała długo ze względu na to, że jako dziecko nie potrafiłem zając
+                    sie czymś przez dłuższy okres czasu. Możliwe ze nie miałem wtedy dobrego nauczyciela. Któż to wie. Czasy
+                    sie zmieniły, ja też sie zmieniłem...
+                </p>
+                <p class="about__p about__p--color">Chcesz dowiedzieć sie więcej?
+                </p>
+            </div>
+            <button type="button" class="about__button" data-animate="fadeIn">Kliknij</button>
+            <hr class="about__hr">
+            <div class="about__text" data-animate="fadeIn">
+                <h3 class="about__h3">Co robie?</h3>
+                <p class="about__p">
+                    Staram sie robić to lubię. Aktualnie szukam pracy jako junior front-end developer. W wolnych chwilach czytam ksiązki, ogladam
+                    seriale ale nie oglądam telewzji.
+                    <br>Z rzeczy, które mnie interesują moge wymienić między innymi :
+                </p>
+                <ul class="about__ul">
+                    <li class="about__li">
+                        <a class="about__link" href="#">Psychologia</a>
+                    </li>
+                    <li class="about__li">
+                        <a class="about__link" href="#">Fantastyka naukowa</a>
+                    </li>
+                    <li class="about__li">
+                        <a class="about__link" href="#">Komiksy</a>
+                    </li>
+                    <li class="about__li">
+                        <a class="about__link" href="#">Podróże</a>
+                    </li>
+                    <li class="about__li">
+                        <a class="about__link" href="#">Behawiorystyka psów</a>
+                    </li>
+                </ul>
+                <p class="about__p about__p--color">Chcesz dowiedzieć sie więcej?
+                </p>
+            </div>
+             <button type="button" class="about__button" data-animate="fadeIn">Kliknij</button>
+        </div>
+        <div class="about__container" data-animate="fadeIn">
+            <div class="about__text about__text--technology">
+                <img class="about__img" src="img/super-mario-2690254_1280.jpg" alt="mario">
+                <h3 class="about__h3">Technologie</h3>
+                <div class="about__tooltip">
+                    <i class="fab fa-html5"></i>
+                    <span class="about__tooltiptext">HTML5</span>
+                </div>
+                <div class="about__tooltip">
+                    <i class="fab fa-css3"></i>
+                    <span class="about__tooltiptext">CSS3</span>
+                </div>
+                <div class="about__tooltip">
+                    <i class="fab fa-js-square"></i>
+                    <span class="about__tooltiptext">JavaScript</span>
+                </div>
+                <div class="about__tooltip">
+                    <i class="fab fa-gulp"></i>
+                    <span class="about__tooltiptext">Gulp</span>
+                </div>
+                <div class="about__tooltip">
+                    <i class="fab fa-git"></i>
+                    <span class="about__tooltiptext">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio" data-animate="fadeIn">
+        <div class="portfolio__container">
+            <h3 class="portfolio__h3">Projekty</h3>
+            <div class="portfolio__gallery">
+                <div class="portoflio__row">
+                    <div class="portfolio__pop">
+                        <img src="img/img-1.png" alt="image" class="portoflio__img">
+                        <div class="portfolio__icons">
+                            <h4 class="portfolio__icons--a portfolio__icons--text ">PSD to HTML</h4>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-link "></i>
+                            </a>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-eye "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__pop">
+                        <img src="img/summer-beach-party-flyer-template-free-psd.jpg" alt="" class="portoflio__img">
+                        <div class="portfolio__icons">
+                            <h4 class="portfolio__icons--a portfolio__icons--text ">PSD to HTML</h4>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="https://pglejzer.github.io/weekdev18/">
+                                <i class="fas fa-link "></i>
+                            </a>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-eye "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portoflio__row">
+                    <div class="portfolio__pop">
+                        <img src="img/be-creative-creative-creativity-256514.jpg" alt="image" class="portoflio__img">
+                        <div class="portfolio__icons">
+                            <h4 class="portfolio__icons--a portfolio__icons--text ">PSD to HTML</h4>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-link "></i>
+                            </a>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-eye "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__pop">
+                        <img src="img/logo_up.png" alt="logo" class="portoflio__img">
+                        <div class="portfolio__icons">
+                            <h4 class="portfolio__icons--a portfolio__icons--text portfolio__icons--text--molli ">Strona sklepu</h4>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="http://mollibutik.pl/">
+                                <i class="fas fa-link fas--molli"></i>
+                            </a>
+                            <a class="portfolio__icons--a portfolio__icons--down" href="#">
+                                <i class="fas fa-eye fas--molli"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a class="portfolio__a" href="https://github.com/pglejzer?tab=repositories">
+                    <button class="portfolio__button" type="button">
+                        Zobacz wiecej!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" data-animate="fadeIn">
+        <div class="contact__container">
+            <h6 class="contact__title">Skontakuj sie ze mną!</h6>
+            <div class="contact__space">
+                <div class="contact__tooltip">
+                    <a class="contact__a" href="https://www.linkedin.com/in/piotr-glejzer/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <span class="contact__tooltiptext">Kliknij!</span>
+                </div>
+                <div class="contact__tooltip">
+                    <a class="contact__a" href="https://www.facebook.com/piotr.glejzer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <span class="contact__tooltiptext">Kliknij!</span>
+                </div>
+                <div class="contact__tooltip">
+                    <a class="contact__a" href="#">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <span class="contact__tooltiptext contact__tooltiptext--email">glejzerpiotr@gmail.com</span>
+                </div>
+                <div class="contact__tooltip">
+                    <a class="contact__a" href="https://github.com/pglejzer">
+                        <i class="fab fa-github"></i>
+                        <span class="contact__tooltiptext contact__tooltiptext--git">Kliknij!</span>
+                    </a>
+                </div>
+                <div class="contact__tooltip">
+                    <a class="contact__a" href="https://plus.google.com/u/1/103340588232847766432">
+                        <i class="fab fa-google-plus-square"></i>
+                    </a>
+                    <span class="contact__tooltiptext">Kliknij!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <p class="footer__p">Strona wykonana przez
+            <a class="footer__a" href=""> Piotr Glejzer</a>
+            with
+            <i class="far fa-heart"></i>.
+        </p>
+        <a href="#home" id="toTopButton" class="toTopButton">
+            <i class="fas fa-sort-up"></i>
+        </a>
+    </footer>
+</body>
+
+</html>

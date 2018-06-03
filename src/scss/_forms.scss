@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&subset=latin-ext');
+$font-Poppins:'Poppins',
+sans-serif;
+$color-black:#000;
+$almost-white:#F5F9F6;
+$white:#fff;
+$text-shadow-black: -1px 0 #000,
+0 2px #000,
+1px 0 #000,
+0 -1px #000;
+$text-shadow-white:-1px 0 #fff,
+0 2px #fff,
+1px 0 #fff,
+0 -1px #fff;
+$text-shadow-darkblue:-1px 0 #005997,
+0 2px #005997,
+1px 0 #005997,
+0 -1px #005997;
+$blue-dark: rgb(0,
+89,
+151);
+$color-git:rgb(240,
+80,
+51);
+$color-facebook: rgb(66,
+103,
+178);
+;
+$color-linkedin:rgb(0,
+119,
+181);
+;
+$color-gp: rgb(220,
+78,
+65);
+$color-github: rgb(94,
+34,
+127);
+$color-envelope: rgb(224,
+81,
+31);
+
+%button-blue-dark{
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    background: $blue-dark;
+    color: $white;
+    border: 2px solid $blue-dark;
+    &:hover,&:focus{
+        background: $white;
+        color: $blue-dark;
+        transition: 0.7s ease;
+    }
+}
