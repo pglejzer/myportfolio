@@ -1,1 +1,1 @@
-Live: https://pglejzer.github.io/myportfolio/
+Live: https://pglejzer.github.io/myportfolio/dist
