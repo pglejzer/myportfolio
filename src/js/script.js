@@ -1,31 +1,30 @@
-$(document).on('click', 'a[href^="#"]','#toTopButton' , function (event) {
+$(document).on('click', 'a[href^="#"]', '#toTopButton', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
 });
 
-$(document).ready(function(){
-    $('*[data-animate]').addClass('hide').each(function(){
-  $(this).viewportChecker({
-    classToAdd: 'show animated ' + $(this).data('animate'),
-    classToRemove: 'hide',
-    offset: '20%',
-  });
-});
-});
-
-$(document).ready(function(){
-    $('.about__button').click(function(){
-        $(".about__p--display").slideToggle(300,'swing');
-    });
-});
-$(document).ready(function(){
-    $('.about__button--second').click(function(){
-        $(".about__p--second").slideToggle(300,'swing');
+$(document).ready(function () {
+    $('*[data-animate]').addClass('hide').each(function () {
+        $(this).viewportChecker({
+            classToAdd: 'show animated ' + $(this).data('animate'),
+            classToRemove: 'hide',
+            offset: '20%',
+        });
     });
 });
 
+$(document).ready(function () {
+    $('.about__button').click(function () {
+        $(".about__p--display").slideToggle(300, 'swing');
+    });
+});
+$(document).ready(function () {
+    $('.about__button--second').click(function () {
+        $(".about__p--second").slideToggle(300, 'swing');
+    });
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,25 +63,25 @@ $(document).ready(function ($) {
     });
 });
 
-    window.onscroll = function () {
-        var hideShowButton = document.getElementById('about__button');;
+window.onscroll = function () {
+    var hideShowButton = document.getElementById('about__button');;
 
-        if (hideShowButton == '450') {
-            toTopButton.style.display = 'flex';
+    if (hideShowButton == '450') {
+        toTopButton.style.display = 'flex';
+    } else {
+        toTopButton.style.display = 'none';
+    }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.getElementById("about__button");
+    var displayP = document.getElementsByClassName("about__p--display");
+    button.addEventListener('click', function () {
+
+        if (menu.className == displayP) {
+            displayP.style.display = 'block';
         } else {
-            toTopButton.style.display = 'none';
+            displayP.style.display = 'none';
         }
-    };
-
-    document.addEventListener("DOMContentLoaded", function () {
-        var button = document.getElementById("about__button");
-        var displayP = document.getElementsByClassName("about__p--display");
-        button.addEventListener('click', function () {
-    
-            if (menu.className == displayP) {
-                displayP.style.display ='block';
-            } else {
-                displayP.style.display = 'none';
-            }
-        });
     });
+});
