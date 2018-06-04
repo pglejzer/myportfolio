@@ -253,7 +253,7 @@ html {
                 color: $color-black;
             }
         }
-        .about__button {
+        .about__button,.about__button--second {
             padding: 10px 12px;
             margin-top: 5px;
             @extend %button-blue-dark;
@@ -262,6 +262,13 @@ html {
             display: flex;
             align-items: center;
         }
+    }
+    .about__p--display,.about__p--second{
+        display: none;
+        position: relative;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
     }
     &__hr {
         margin-top: 25px;
@@ -404,10 +411,12 @@ html {
             color: $white;
             border: none;
             font-size: 1.2rem;
-            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+            box-shadow: 1px 1px 1px 1px $blue-dark;;
             cursor: pointer;
             &:hover {
-                transition: 1.2s;
+                background: $white;
+                color:$blue-dark;
+                transition:0.7s;
                 border-radius: 25px;
             }
         }
